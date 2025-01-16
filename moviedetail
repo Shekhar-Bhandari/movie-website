@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Movie Details</title>
+</head>
+<body class="bg-black text-white font-sans">
+    <!-- Header Section -->
+    <nav class="absolute top-0 left-0 w-full flex items-center justify-between p-6 bg-black bg-opacity-50 z-10">
+        <div class="text-white font-bold text-2xl">Play</div>
+        <ul class="flex items-center space-x-8 text-white font-medium">
+            <li><a href="#" class="hover:text-gray-400">Movies</a></li>
+            <li><a href="#" class="hover:text-gray-400">Series</a></li>
+            <li><a href="#" class="hover:text-gray-400">MyCollection</a></li>
+        </ul>
+        <div class="flex items-center space-x-4">
+            <input type="text" placeholder="Search movies, series and more" class="px-4 py-2 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-green-500">
+            <img src="Movie-posters/accountbutton.png" alt="Account" class="w-8 h-8 rounded-full object-cover">
+        </div>
+    </nav>
+
+   <!-- Movie Details Section -->
+<section class="px-6 pt-20 mt-20 pb-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Left Section -->
+    <div>
+        <h2 class="text-4xl font-bold mb-2">Nosferatu</h2>
+        <p class="text-gray-400 mb-2">2024 &bull; Movie &bull; 120 mins</p>
+        <p class="mb-4 text-gray-300">
+            A gothic tale of obsession between a haunted young woman and the terrifying vampire infatuated with her, causing untold horror in its wake.
+        </p>
+
+        <p class="text-gray-500 mb-4">Home / Movies / Horror / Nosferatu</p>
+
+        <div class="flex items-center space-x-4 mb-4">
+            <button class="px-6 py-2 bg-green-500 text-black font-semibold rounded hover:bg-green-600">Buy/Rent</button>
+            <h4>RS.72 / RS.40</h4>
+            <button class="text-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400 hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l3-8H5.4M7 13L5.4 7M7 13l1.6 6m6-6l1.6 6M10 19a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                </svg>
+            </button>
+            <button class="text-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400 hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14m-7-7h14" />
+                </svg>
+                
+            </button>
+        </div>
+
+        <div class=" text-gray-400">
+            <p>5.4k people have this on their watchlist</p>
+            <p>2.8k people have rented this movie</p>
+        </div>
+    </div>
+    
+
+    <!-- Right Section -->
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nulvWqYUM8k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+</section>
+ 
+<div class="flex space-x-4 ml-7">
+  <h4 >7.8</h4>
+  <img src="Movie-posters/imdb.png" alt="imdb" class="h-7 w-16 rounded-lg  " />
+  <P>|</P>
+  <h4>84%</h4>
+  <img src="Movie-posters/rottentomatoes.png" alt="rotten tomatoes" class="h-7 w-16 ml-8 rounded-lg "/>
+
+</div>
+
+    <!-- Additional Details -->
+    <div class="bg-black text-white p-2 mt-2 space-y-8">
+        <!-- Genre Section -->
+        <div>
+          <h2 class="text-lg font-semibold mb-2 flex space-x-2">Genre</h2>
+          <div class="flex space-x-2">
+            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Horror</span>
+            <span class="px-3 py-1 bg-gray-800 rounded-full text-sm">Fantasy</span>
+          </div>
+        </div>
+      
+        <!-- Cast Section -->
+        <div>
+          <h2 class="text-lg font-semibold mb-4">Cast</h2>
+          <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
+            <div class="text-center">
+              <img
+                src="Movie-posters/review1.png"
+                alt="Actor 1"
+                class="w-16 h-16 rounded-full mx-auto"
+              />
+              <p class="text-sm font-semibold mt-2">Lily-Rose Depp</p>
+              <p class="text-xs text-gray-400">as 'Ellen Hunter'</p>
+            </div>
+            <div class="text-center">
+              <img
+                src="Movie-posters/review2.png"
+                alt="Actor 2"
+                class="w-16 h-16 rounded-full mx-auto"
+              />
+              <p class="text-sm font-semibold mt-2">Willem Dafoe</p>
+              <p class="text-xs text-gray-400">as 'Prof. Albin Eberhart'</p>
+            </div>
+            <div class="text-center">
+              <img
+                src="Movie-posters/review3.png"
+                alt="Actor 3"
+                class="w-16 h-16 rounded-full mx-auto"
+              />
+              <p class="text-sm font-semibold mt-2">Nicholas Hoult</p>
+              <p class="text-xs text-gray-400">as 'Thomas Hunter'</p>
+            </div>
+            <div class="text-center">
+              <img
+                src="Movie-posters/flash.jpg"
+                alt="Actor 4"
+                class="w-16 h-16 rounded-full mx-auto"
+              />
+              <p class="text-sm font-semibold mt-2">Aaron Taylor-Johnson</p>
+              <p class="text-xs text-gray-400">as 'Friedrich Harding'</p>
+            </div>
+            <div class="text-center">
+              <img
+                src="Movie-posters/nosferatu4.png"
+                alt="Actor 5"
+                class="w-16 h-16 rounded-full mx-auto"
+              />
+              <p class="text-sm font-semibold mt-2">Emma Corrin</p>
+              <p class="text-xs text-gray-400">as 'Anna Harding'</p>
+            </div>
+            <div class="text-center">
+              <img
+                src="Movie-posters/noaferatu2.png"
+                alt="Actor 6"
+                class="w-16 h-16 rounded-full mx-auto"
+              />
+              <p class="text-sm font-semibold mt-2">Bill Skarsgård</p>
+              <p class="text-xs text-gray-400">as 'Count Orlok'</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Director Section -->
+        <div>
+          <h2 class="text-lg font-semibold mb-2">Director</h2>
+          <div class="flex items-center space-x-4">
+            <img
+              src="Movie-posters/review1.png"
+              alt="Director"
+              class="w-16 h-16 rounded-full"
+            />
+            <p class="text-sm font-semibold">Robert Eggers</p>
+          </div>
+        </div>
+      
+        <!-- Language Available Section -->
+        <div>
+          <h2 class="text-lg font-semibold mb-2">Language available</h2>
+          <p class="text-sm text-gray-400">Hindi, English, French, German</p>
+        </div>
+      </div>
+
+      <div class="bg-black text-white p-9 space-y-8">
+        <!-- Reviews Section -->
+        <div>
+          <h2 class="text-lg font-semibold mb-4">Reviews (159)</h2>
+      
+         
+          <div class="flex items-center space-x-4 mb-6">
+            <img
+              src="Movie-posters/review1.png"
+              alt="User Avatar"
+              class="w-10 h-10 rounded-full"
+            />
+            <input
+              type="text"
+              placeholder="Add a review"
+              class="flex-1 px-4 py-2 bg-gray-800 text-white rounded-lg text-sm"
+            />
+            <button class="px-4 py-2 bg-gray-800 text-white rounded-lg text-sm">Add</button>
+          </div>
+      
+         
+          <div class="space-y-6">
+          
+            <div class="flex items-start space-x-4">
+              <img
+                src="Movie-posters/review2.png"
+                alt="User Avatar"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <div class="flex items-center space-x-2">
+                  <h3 class="text-sm font-semibold">elena</h3>
+                  <div class="flex text-yellow-400">
+                    ★★★★☆
+                  </div>
+                </div>
+                <p class="text-sm text-gray-400">
+                  Robert Eggers, you've done it again... I would marry the lighting in this movie if I could. I loved everything, but the lighting I love the most.
+                </p>
+              </div>
+            </div>
+      
+           
+            <div class="flex items-start space-x-4">
+              <img
+                src="Movie-posters/review3.png"
+                alt="User Avatar"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <div class="flex items-center space-x-2">
+                  <h3 class="text-sm font-semibold">Faith</h3>
+                  <div class="flex text-yellow-400">
+                    ★★★★☆
+                  </div>
+                </div>
+                <p class="text-sm text-gray-400">TW: handlebar mustache</p>
+              </div>
+            </div>
+      
+            <div class="flex items-start space-x-4">
+              <img
+                src="Movie-posters/flash.jpg"
+                alt="User Avatar"
+                class="w-10 h-10 rounded-full"
+              />
+              <div>
+                <div class="flex items-center space-x-2">
+                  <h3 class="text-sm font-semibold">lucaslisbon</h3>
+                  <div class="flex text-yellow-400">
+                    ★★★★☆
+                  </div>
+                </div>
+                <p class="text-sm text-gray-400">
+                  I've been wanting to watch a Robert Eggers film, and so this is the first one. The cinematography is simply amazing, and the cast did a fantastic job. S/O William Dafoe; he was my favorite, especially when his character said, "If we are to tame darkness, we must first face that it exists." Peak Cinema.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+           <!--photos-->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Photos</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img src="Movie-posters/nosferatu1.png" alt="Scene 1" class="rounded-lg">
+                    <img src="Movie-posters/noaferatu2.png" alt="Scene 2" class="rounded-lg">
+                    <img src="Movie-posters/nosferatu3.png" alt="Scene 3" class="rounded-lg">
+                    <img src="Movie-posters/nosferatu4.png"alt="Scene 4" class="rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--similar movies-->
+    <section class="px-10 pb-10 relative">
+        <!-- Title with Arrow Buttons -->
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-2xl font-semibold flex items-center">
+            <img src="Movie-posters/fire-03.png" class="h-6 mr-2" alt="Fire Icon" />
+            Similar Movies
+          </h2>
+      
+          <!-- Arrow Buttons -->
+          <div class="flex gap-2">
+            <!-- Left Arrow -->
+            <button
+              class="bg-gray-900 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-800 shadow-lg"
+              onclick="document.getElementById('movies-container').scrollBy({ left: -300, behavior: 'smooth' })"
+            >
+              <span>&#8592;</span>
+            </button>
+            <!-- Right Arrow -->
+            <button
+              class="bg-gray-900 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-800 shadow-lg"
+              onclick="document.getElementById('movies-container').scrollBy({ left: 300, behavior: 'smooth' })"
+            >
+              <span>&#8594;</span>
+            </button>
+          </div>
+        </div>
+      
+        <!-- Movies-->
+        <div id="movies-container" class="flex overflow-hidden gap-4 px-2 ">
+          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="Movie-posters/dune-prophecy.jpg" alt="Dune" class="w-full">
+            <p class="text-white p-2">Dune</p>
+          </div>
+          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="Movie-posters/the-bear.jpg" alt="The Bear" class="w-full">
+            <p class="text-white p-2">The Bear</p>
+          </div>
+          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="Movie-posters/Twister.jpg" alt="Twisters" class="w-full">
+            <p class="text-white p-2">Twisters</p>
+          </div>
+          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="Movie-posters/heretic.jpg" alt="Heretic" class="w-full">
+            <p class="text-white p-2">Heretic</p>
+          </div>
+          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="Movie-posters/the-penguin.jpg" alt="The Penguin" class="w-full">
+            <p class="text-white p-2">The Penguin</p>
+          </div>
+          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="Movie-posters/the-bear.jpg" alt="The Bear" class="w-full">
+            <p class="text-white p-2">The Bear</p>
+          </div>
+          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="Movie-posters/good doctor.jpg" alt="Good Doctor" class="w-full">
+            <p class="text-white p-2">Good Doctor</p>
+          </div>
+          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="Movie-posters/games of thrones.jpg" alt="Game of Thrones" class="w-full">
+            <p class="text-white p-2">Game of Thrones</p>
+          </div>
+        </div>
+      </section>
+
+<!--trending movies-->
+      <section class="px-10 pb-10">
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-2xl font-semibold">
+                <img src="Movie-posters/fire-03.png" style="vertical-align: middle; display: inline-block;" alt="Fire Icon" /> Trending Movies
+            </h2>
+    
+            <!-- Arrow Buttons -->
+            <div class="flex gap-2">
+                <!-- Left Arrow -->
+                <button
+                    class="w-8 h-8 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-gray-700"
+                    onclick="document.getElementById('trending-container').scrollBy({ left: -300, behavior: 'smooth' })"
+                >
+                    <span>&#8592;</span>
+                </button>
+    
+                <!-- Right Arrow -->
+                <button
+                    class="w-8 h-8 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-gray-700"
+                    onclick="document.getElementById('trending-container').scrollBy({ left: 300, behavior: 'smooth' })"
+                >
+                    <span>&#8594;</span>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Horizontal Scrollable section -->
+        <div id="trending-container" class="flex overflow-hidden gap-4  px-2">
+            <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+                <img src="Movie-posters/dune.jpg" alt="Dune" class="w-full">
+                <p class="text-white p-2">Dune</p>
+            </div>
+            <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+                <img src="Movie-posters/Squid game.jpg" alt="Squid game" class="w-full">
+                <p class="text-white p-2">Squid game 2</p>
+            </div>
+            <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+                <img src="Movie-posters/arcane.jpg" alt="Twisters" class="w-full">
+                <p class="text-white p-2">Arcane</p>
+            </div>
+            <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+                <img src="Movie-posters/the-penguin.jpg" alt="Heretic" class="w-full">
+                <p class="text-white p-2">The penguin</p>
+            </div>
+            <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+                <img src="Movie-posters/the-bear.jpg" alt="the bear" class="w-full">
+                <p class="text-white p-2">The Bear</p>
+            </div>
+            <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+                <img src="Movie-posters/good doctor.jpg" alt="good doctor" class="w-full">
+                <p class="text-white p-2">Good doctor</p>
+            </div>
+            <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
+                <img src="Movie-posters/games of thrones.jpg" alt="game of thrones" class="w-full">
+                <p class="text-white p-2">Game of thrones</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8">
+          <!-- Play Section -->
+          <div>
+            <h2 class="text-lg font-bold mb-4">Play</h2>
+            <ul class="space-y-2">
+              <li>Movies</li>
+              <li>TV shows</li>
+            </ul>
+          </div>
+      
+          <!-- Genre Section -->
+          <div>
+            <h3 class="text-md font-semibold mb-4">Genre</h3>
+            <ul class="space-y-2">
+              <li>Action</li>
+              <li>Drama</li>
+              <li>Comedy</li>
+              <li>Thriller</li>
+              <li>Sci-fi</li>
+            </ul>
+          </div>
+      
+          <!-- Others Section -->
+          <div>
+            <h3 class="text-md font-semibold mb-4">Others</h3>
+            <ul class="space-y-2">
+              <li>Recommendation</li>
+              <li>Trending</li>
+              <li>Upcoming</li>
+              <li>Newly added</li>
+            </ul>
+          </div>
+      
+          <!-- Social Media Section -->
+          <div>
+            <p class="text-sm font-medium mb-4">Follow us on</p>
+            <div class="flex space-x-4">
+              <a href="#"><img src="Movie-posters/facebook.png" alt="Facebook" class="w-6"></a>
+              <a href="#"><img src="Movie-posters/instagram.png" alt="Instagram" class="w-6"></a>
+              <a href="#"><img src="Movie-posters/youtube.jpg" alt="YouTube" class="w-6"></a>
+              <a href="#"><img src="Movie-posters/twitter.jpg" alt="Twitter" class="w-6"></a>
+            </div>
+          </div>
+      
+          <!-- Download Section -->
+          <div>
+            <div class="space-y-4">
+                <a href="#">
+                  <img src="Movie-posters/googleplay1.png" alt="Get it on Google Play" class="w-36 h-auto object-contain">
+                </a>
+              
+                <a href="#">
+                  <img src="Movie-posters/appstore1.png" alt="Download on the App Store" class="w-36 h-auto object-contain">
+                </a>
+              </div>
+              
+          </div>
+        </div>
+      
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-700 mt-8 pt-4">
+          <div class="container mx-auto px-4 text-center">
+            <p class="text-sm mb-4">Copyright 2025 Payplay Inc. All rights reserved.</p>
+            <ul class="flex justify-center space-x-6">
+              <li><a href="#" class="text-sm hover:underline">Privacy policy</a></li>
+              <li><a href="#" class="text-sm hover:underline">Help & Support</a></li>
+              <li><a href="#" class="text-sm hover:underline">Terms and conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
