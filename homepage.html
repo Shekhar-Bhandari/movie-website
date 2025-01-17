@@ -34,7 +34,10 @@
     <button>
     <div class="flex items-center space-x-4">
         <input type="text" placeholder="Search movies, series and more" class="px-6 py-2 border-2 border-solid border-neutral-800 rounded bg-transparent text-white ">
-        <img src="Movie-posters/accountbutton.png" alt="Account" class="w-8 h-8 rounded-full object-cover">
+        <div class="w-11 h-11 hover:bg-neutral-900 flex items-center justify-center rounded">
+          <img src="./assets/account.svg" alt="Account" class="w-6 h-6 rounded-full object-cover">
+        </div>
+        
       </div></button>
   </nav>
 
@@ -70,63 +73,63 @@
 
   
     <!-- Recommended Movies Section -->
-    <section class="px-10 pb-10 relative">
+    <section class=" mt-20 mb-10 px-10 pb-10 ">
         <!-- Title with Arrow Buttons -->
         <div class="flex items-center justify-between mb-4">
-          <h2 class="text-2xl font-semibold">Recommended for you</h2>
+          <h2 class="text-xl  text-neutral-200 font-semibold">Recommended for you</h2>
       
           <!-- Arrow Buttons -->
           <div class="flex gap-2">
             <!-- Left Arrow -->
             <button
-              class="w-8 h-8 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-gray-700"
+              class="w-11 h-11 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-gray-700"
               onclick="document.getElementById('recommended-container').scrollBy({ left: -300, behavior: 'smooth' })"
             >
-              <span>&#8592;</span>
+              <img src="./assets/arrow-left.svg" alt="Right Arrow" class="w-6 h-6">
             </button>
       
             <!-- Right Arrow -->
             <button
-              class="w-8 h-8 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-gray-700"
+              class="w-11 h-11 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-gray-700"
               onclick="document.getElementById('recommended-container').scrollBy({ left: 300, behavior: 'smooth' })"
             >
-              <span>&#8594;</span>
+              <img src="./assets/arrow-right.svg" alt="Right Arrow" class="w-6 h-6">
             </button>
           </div>
         </div>
       
         <!-- Movies -->
-        <div id="recommended-container" class="flex overflow-hidden gap-4 px-2">
+        <div id="recommended-container" class="mt-6 flex overflow-hidden gap-4 px-2">
           <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/avatar.jpg" alt="Avatar" class="w-full">
+            <img src="images/avatar.jpg" alt="Avatar" class="w-full">
             <p class="text-white p-2">Avatar</p>
           </div>
           <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/kraven.jpg" alt="Kraven" class="w-full">
+            <img src="./images/kraven.jpg" alt="Kraven" class="w-full">
             <p class="text-white p-2 ">Kraven</p>
           </div>
           <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/Mufasa.jpg" alt="Mufasa" class="w-full">
+            <img src="./images/Mufasa.jpg" alt="Mufasa" class="w-full">
             <p class="text-white p-2">Mufasa</p>
           </div>
           <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/dune.jpg" alt="Dune" class="w-full">
+            <img src="./images/dune.jpg" alt="Dune" class="w-full">
             <p class="text-white p-2">Dune</p>
           </div>
           <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/Brooklyn.jpg" alt="Brooklyn" class="w-full">
+            <img src="./images/Brooklyn.jpg" alt="Brooklyn" class="w-full">
             <p class="text-white p-2">Brooklyn</p>
           </div>
           <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/dexter.jpg" alt="Dexter" class="w-full">
+            <img src="./images/dexter.jpg" alt="Dexter" class="w-full">
             <p class="text-white p-2">Dexter</p>
           </div>
           <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/flash.jpg" alt="Flash" class="w-full">
+            <img src="./images/flash.jpg" alt="Flash" class="w-full">
             <p class="text-white p-2">Flash</p>
           </div>
           <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/gladiator.jpg" alt="Gladiator" class="w-full">
+            <img src="./images/gladiator.jpg" alt="Gladiator" class="w-full">
             <p class="text-white p-2">Gladiator</p>
           </div>
         </div>
@@ -135,66 +138,167 @@
       
 
     <!-- Trending Movies Section -->
-    <section class="px-10 pb-10 relative">
+    <section class=" my-10 px-10 pb-10 relative">
         <!-- Title with Arrow Buttons -->
-        <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center justify-between mb-6">
           <h2 class="text-2xl font-semibold flex items-center">
-            <img src="Movie-posters/fire-03.png" class="h-6 mr-2" alt="Fire Icon" />
-            Trending Movies
+            <img src="./images/fire-03.png" class="h-6 mr-2" alt="Fire Icon" />
+            <p class="text-xl font-medium text-neutral-200">Trending Movies</p>
           </h2>
       
           <!-- Arrow Buttons -->
           <div class="flex gap-2">
             <!-- Left Arrow -->
             <button
-              class="bg-gray-900 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-800 shadow-lg"
+              class="bg-gray-900 text-white w-11 h-11 rounded-full flex items-center justify-center hover:bg-gray-800 shadow-lg"
               onclick="document.getElementById('movies-container').scrollBy({ left: -300, behavior: 'smooth' })"
             >
-              <span>&#8592;</span>
+              <img src="./assets/arrow-left.svg" alt="Right Arrow" class="w-6 h-6">
             </button>
             <!-- Right Arrow -->
             <button
-              class="bg-gray-900 text-white w-8 h-8 rounded-full flex items-center justify-center hover:bg-gray-800 shadow-lg"
+              class="bg-gray-900 text-white w-11 h-11 rounded-full flex items-center justify-center hover:bg-gray-800 shadow-lg"
               onclick="document.getElementById('movies-container').scrollBy({ left: 300, behavior: 'smooth' })"
             >
-              <span>&#8594;</span>
+              <img src="./assets/arrow-right.svg" alt="Right Arrow" class="w-6 h-6">
             </button>
           </div>
         </div>
       
         <!-- Movies -->
-        <div id="movies-container" class="flex overflow-hidden gap-4 px-2 ">
-          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/dune-prophecy.jpg" alt="Dune" class="w-full">
-            <p class="text-white p-2">Dune</p>
+        <div id="movies-container" class="flex overflow-hidden gap-8 px-2 ">
+          <div class="bg-transparent rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="./images/dune-prophecy.jpg" alt="Dune" class="w-full">
+
+            <!--Chart-section-->
+            <div class="w-full flex justify-between items-start gap-4 py-2 ">
+              <p class="text-7xl text-neutral-700 font-medium">1</p>
+              <div class="flex w-full  flex-col gap-0 mt-2 ">
+                <p class="text-xl font-medium text-neutral-200 mb-0">Dune</p>
+                <div class="flex gap-1 items-center">
+                  <p class="text-neutral-200 bg-neutral-900 px-2 py-1 rounded text-sm">Sci-Fic</p>
+                  <span class="text-5xl text-neutral-500 w-4" >&#183;</span>
+                <p class="text-neutral-400 text-sm">124 mins</p>
+                </div>  
+              </div>
+            </div>
+
           </div>
-          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/the-bear.jpg" alt="The Bear" class="w-full">
-            <p class="text-white p-2">The Bear</p>
+          <div class=" rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="./images/the-bear.jpg" alt="The Bear" class="w-full">
+            
+            <!--Chart-section-->
+            <div class="w-full flex justify-between items-start gap-4 py-2 ">
+              <p class="text-7xl text-neutral-700 font-medium">2</p>
+              <div class="flex w-full  flex-col gap-0 mt-2 ">
+                <p class="text-xl font-medium text-neutral-200 mb-0">The Bear</p>
+                <div class="flex gap-1 items-center">
+                  <p class="text-neutral-200 bg-neutral-900 px-2 py-1 rounded text-sm">Sci-Fic</p>
+                  <span class="text-5xl text-neutral-500 w-4" >&#183;</span>
+                <p class="text-neutral-400 text-sm">124 mins</p>
+                </div>  
+              </div>
+            </div>
           </div>
-          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/Twister.jpg" alt="Twisters" class="w-full">
-            <p class="text-white p-2">Twisters</p>
+
+          <div class=" rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="./images/Twister.jpg" alt="Twisters" class="w-full">
+            
+            <!--Chart-section-->
+            <div class="w-full flex justify-between items-start gap-4 py-2 ">
+              <p class="text-7xl text-neutral-700 font-medium">3</p>
+              <div class="flex w-full  flex-col gap-0 mt-2 ">
+                <p class="text-xl font-medium text-neutral-200 mb-0">Twister</p>
+                <div class="flex gap-1 items-center">
+                  <p class="text-neutral-200 bg-neutral-900 px-2 py-1 rounded text-sm">Sci-Fic</p>
+                  <span class="text-5xl text-neutral-500 w-4" >&#183;</span>
+                <p class="text-neutral-400 text-sm">124 mins</p>
+                </div>  
+              </div>
+            </div>
           </div>
-          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/heretic.jpg" alt="Heretic" class="w-full">
-            <p class="text-white p-2">Heretic</p>
+
+          <div class=" rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="./images/heretic.jpg" alt="Heretic" class="w-full">
+          
+            <!--Chart-section-->
+            <div class="w-full flex justify-between items-start gap-4 py-2 ">
+              <p class="text-7xl text-neutral-700 font-medium">4</p>
+              <div class="flex w-full  flex-col gap-0 mt-2 ">
+                <p class="text-xl font-medium text-neutral-200 mb-0">Heretic</p>
+                <div class="flex gap-1 items-center">
+                  <p class="text-neutral-200 bg-neutral-900 px-2 py-1 rounded text-sm">Sci-Fic</p>
+                  <span class="text-5xl text-neutral-500 w-4" >&#183;</span>
+                <p class="text-neutral-400 text-sm">124 mins</p>
+                </div>  
+              </div>
+            </div>
           </div>
-          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/the-penguin.jpg" alt="The Penguin" class="w-full">
-            <p class="text-white p-2">The Penguin</p>
+
+          <div class=" rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="./images/the-penguin.jpg" alt="The Penguin" class="w-full">
+            
+            <!--Chart-section-->
+            <div class="w-full flex justify-between items-start gap-4 py-2 ">
+              <p class="text-7xl text-neutral-700 font-medium">5</p>
+              <div class="flex w-full  flex-col gap-0 mt-2 ">
+                <p class="text-xl font-medium text-neutral-200 mb-0">The penguin</p>
+                <div class="flex gap-1 items-center">
+                  <p class="text-neutral-200 bg-neutral-900 px-2 py-1 rounded text-sm">Sci-Fic</p>
+                  <span class="text-5xl text-neutral-500 w-4" >&#183;</span>
+                <p class="text-neutral-400 text-sm">124 mins</p>
+                </div>  
+              </div>
+            </div>
+
           </div>
-          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/the-bear.jpg" alt="The Bear" class="w-full">
-            <p class="text-white p-2">The Bear</p>
+          <div class=" rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="./images/the-bear.jpg" alt="The Bear" class="w-full">
+            
+            <!--Chart-section-->
+            <div class="w-full flex justify-between items-start gap-4 py-2 ">
+              <p class="text-7xl text-neutral-700 font-medium">6</p>
+              <div class="flex w-full  flex-col gap-0 mt-2 ">
+                <p class="text-xl font-medium text-neutral-200 mb-0">The bear</p>
+                <div class="flex gap-1 items-center">
+                  <p class="text-neutral-200 bg-neutral-900 px-2 py-1 rounded text-sm">Sci-Fic</p>
+                  <span class="text-5xl text-neutral-500 w-4" >&#183;</span>
+                <p class="text-neutral-400 text-sm">124 mins</p>
+                </div>  
+              </div>
+            </div>
           </div>
-          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/good doctor.jpg" alt="Good Doctor" class="w-full">
-            <p class="text-white p-2">Good Doctor</p>
+          <div class=" rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="./images/good doctor.jpg" alt="Good Doctor" class="w-full">
+            
+            <!--Chart-section-->
+            <div class="w-full flex justify-between items-start gap-4 py-2 ">
+              <p class="text-7xl text-neutral-700 font-medium">7</p>
+              <div class="flex w-full  flex-col gap-0 mt-2 ">
+                <p class="text-xl font-medium text-neutral-200 mb-0">Good doctor</p>
+                <div class="flex gap-1 items-center">
+                  <p class="text-neutral-200 bg-neutral-900 px-2 py-1 rounded text-sm">Sci-Fic</p>
+                  <span class="text-5xl text-neutral-500 w-4" >&#183;</span>
+                <p class="text-neutral-400 text-sm">124 mins</p>
+                </div>  
+              </div>
+            </div>
           </div>
-          <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-            <img src="Movie-posters/games of thrones.jpg" alt="Game of Thrones" class="w-full">
-            <p class="text-white p-2">Game of Thrones</p>
+          <div class=" rounded overflow-hidden flex-shrink-0 w-64">
+            <img src="./images/games of thrones.jpg" alt="Game of Thrones" class="w-full">
+            
+            <!--Chart-section-->
+            <div class="w-full flex justify-between items-start gap-4 py-2 ">
+              <p class="text-7xl text-neutral-700 font-medium">8</p>
+              <div class="flex w-full  flex-col gap-0 mt-2 ">
+                <p class="text-xl font-medium text-neutral-200 mb-0">Games of thrones</p>
+                <div class="flex gap-1 items-center">
+                  <p class="text-neutral-200 bg-neutral-900 px-2 py-1 rounded text-sm">Sci-Fic</p>
+                  <span class="text-5xl text-neutral-500 w-4" >&#183;</span>
+                <p class="text-neutral-400 text-sm">124 mins</p>
+                </div>  
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -203,27 +307,29 @@
 
     <!-- Trending Tv shows-->
     <section class="px-10 pb-10">
-        <div class="flex items-center justify-between mb-4">
-            <h2 class="text-2xl font-semibold">
-                <img src="Movie-posters/fire-03.png" style="vertical-align: middle; display: inline-block;" alt="Fire Icon" /> Trending TV Shows
-            </h2>
+        <div class="flex items-center justify-between mb-6">
+          <div class="flex items-center gap-2">
+            <img src="./images/fire-03.png"  alt="Fire Icon" /> 
+            <P class="text-2xl font-medium text-neutral-200" >Trending TV Shows</P>
+          </div>
+            
     
             <!-- Arrow Buttons -->
             <div class="flex gap-2">
                 <!-- Left Arrow -->
                 <button
-                    class="w-8 h-8 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-gray-700"
+                    class="w-11 h-11 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-gray-700"
                     onclick="document.getElementById('trending-container').scrollBy({ left: -300, behavior: 'smooth' })"
                 >
-                    <span>&#8592;</span>
+                    <img src="./assets/arrow-left.svg" alt="Right Arrow" class="w-6 h-6">
                 </button>
     
                 <!-- Right Arrow -->
                 <button
-                    class="w-8 h-8 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-gray-700"
+                    class="w-11 h-11 flex items-center justify-center bg-gray-800 text-white rounded-full shadow hover:bg-gray-700"
                     onclick="document.getElementById('trending-container').scrollBy({ left: 300, behavior: 'smooth' })"
                 >
-                    <span>&#8594;</span>
+                    <img src="./assets/arrow-right.svg" alt="Right Arrow" class="w-6 h-6">
                 </button>
             </div>
         </div>
@@ -231,31 +337,31 @@
         <!-- Horizontal Scrollable section-->
         <div id="trending-container" class="flex overflow-hidden gap-4  px-2">
             <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-                <img src="Movie-posters/dune.jpg" alt="Dune" class="w-full">
+                <img src="./images/dune.jpg" alt="Dune" class="w-full">
                 <p class="text-white p-2">Dune</p>
             </div>
             <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-                <img src="Movie-posters/Squid game.jpg" alt="Squid game" class="w-full">
+                <img src="./images/Squid game.jpg" alt="Squid game" class="w-full">
                 <p class="text-white p-2">Squid game 2</p>
             </div>
             <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-                <img src="Movie-posters/arcane.jpg" alt="Twisters" class="w-full">
+                <img src="./images/arcane.jpg" alt="Twisters" class="w-full">
                 <p class="text-white p-2">Arcane</p>
             </div>
             <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-                <img src="Movie-posters/the-penguin.jpg" alt="Heretic" class="w-full">
+                <img src="./images/the-penguin.jpg" alt="Heretic" class="w-full">
                 <p class="text-white p-2">The penguin</p>
             </div>
             <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-                <img src="Movie-posters/the-bear.jpg" alt="the bear" class="w-full">
+                <img src="./images/the-bear.jpg" alt="the bear" class="w-full">
                 <p class="text-white p-2">The Bear</p>
             </div>
             <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-                <img src="Movie-posters/good doctor.jpg" alt="good doctor" class="w-full">
+                <img src="./images/good doctor.jpg" alt="good doctor" class="w-full">
                 <p class="text-white p-2">Good doctor</p>
             </div>
             <div class="bg-gray-800 rounded overflow-hidden flex-shrink-0 w-64">
-                <img src="Movie-posters/games of thrones.jpg" alt="game of thrones" class="w-full">
+                <img src="./images/games of thrones.jpg" alt="game of thrones" class="w-full">
                 <p class="text-white p-2">Game of thrones</p>
             </div>
         </div>
@@ -264,7 +370,7 @@
    
       <!--footer section-->
 
-      <div id="footer"></div>
+      <div  id="footer"></div>
       <script>
           fetch('footer.html')
               .then(response => response.text())
